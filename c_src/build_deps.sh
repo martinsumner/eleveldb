@@ -65,7 +65,7 @@ case "$1" in
         ;;
 
     *)
-        export MACOSX_DEPLOYMENT_TARGET=10.8
+        export MACOSX_DEPLOYMENT_TARGET=10.14
 
         if [ ! -d snappy-$SNAPPY_VSN ]; then
             tar -xzf snappy-$SNAPPY_VSN.tar.gz
