@@ -56,7 +56,7 @@ case "$1" in
 
     get-deps)
         if [ ! -d leveldb ]; then
-            git clone git://github.com/basho/leveldb
+            git clone git://github.com/martinsumner/leveldb
             (cd leveldb && git checkout $LEVELDB_VSN)
             (cd leveldb && git submodule update --init)
         fi
@@ -81,7 +81,7 @@ case "$1" in
         export LEVELDB_VSN="$LEVELDB_VSN"
 
         if [ ! -d leveldb ]; then
-            git clone git://github.com/basho/leveldb
+            git clone git://github.com/martinsumner/leveldb
             (cd leveldb && git checkout $LEVELDB_VSN)
             (cd leveldb && git submodule update --init)
         fi
